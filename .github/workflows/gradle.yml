@@ -32,9 +32,13 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - name: change directory
+    - name: change directory 1
       run: cd server
-    - name: checking directory
+    - name: checking directory 1
+      run: ls -l
+    - name: change directory 2
+      run: cd server
+    - name: checking directory 2
       run: ls -l
 #     - name: permission for gradle
 #       run: chmod +x gradlew
