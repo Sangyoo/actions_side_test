@@ -33,7 +33,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: permission for gradle
-      run: sudo chmod +x ./gradlew
+      run: sudo chmod +x /server/gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
