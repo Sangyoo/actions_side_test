@@ -34,8 +34,10 @@ jobs:
         distribution: 'temurin'
     - name: change directory
       run: cd server
-    - name: permission for gradle
-      run: chmod +x gradlew
+    - name: checking directory
+      run: ls -l
+#     - name: permission for gradle
+#       run: chmod +x gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
