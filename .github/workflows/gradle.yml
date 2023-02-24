@@ -32,19 +32,10 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - name: change directory 1
-      run: cd server
-    - name: checking directory 1
-      run: ls -l
-    - name: change directory 2
-      run: cd server
-    - name: checking directory 2
-      run: ls -l
-#     - name: permission for gradle
-#       run: chmod +x gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
+        gradle-version: 7.5.1
         arguments: build
-#         path: |
-#           ~/.gradle/wrapper
+    - name: permission for gradle
+      run: chmod +x gradlew
