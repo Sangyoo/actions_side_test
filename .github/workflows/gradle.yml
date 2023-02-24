@@ -32,8 +32,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - name: change directory before build
-      run: cd /server
+    - name: checking directory
+      run: ls -al
     - name: permission for gradle
       run: chmod +x gradlew
     - name: Build with Gradle
