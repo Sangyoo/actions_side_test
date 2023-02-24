@@ -9,9 +9,13 @@ name: server_ci
 
 on:
   push:
-    branches: [ "dev_back" ]
+    branches: 
+      - main
+      - dev_back
   pull_request:
-    branches: [ "dev_back" ]
+    branches:
+      - main
+      - dev_back
 
 permissions:
   contents: read
